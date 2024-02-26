@@ -1,5 +1,5 @@
 ---
 layout: posts
-icon: fas fa-tags
+icon: fas fa-posts
 order: 5
 ---

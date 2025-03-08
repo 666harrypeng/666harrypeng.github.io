@@ -7,21 +7,19 @@ toc_label: "Project 1 - Phase 1: Controller Design and Simulation"
 toc_icon: "tasks"
 ---
 
-# Project 1 - Phase 1: Controller Design and Simulation
-
 ## Trajectory Simulation Figures
 
 Hover
-![./attachments/p1p1-hover_simu_plot.jpg](./attachments/p1p1-hover_simu_plot.jpg)
+![p1p1-hover_simu_plot.jpg](../attachments/p1p1-hover_simu_plot.jpg)
 
 Circle
-![./attachments/p1p1-circle_simu_plot.jpg](./attachments/p1p1-circle_simu_plot.jpg)
+![p1p1-circle_simu_plot.jpg](../attachments/p1p1-circle_simu_plot.jpg)
 
 Square
-![./attachments/p1p1-square_simu_plot_1.jpg](./attachments/p1p1-square_simu_plot_1.jpg)
+![p1p1-square_simu_plot_1.jpg](../attachments/p1p1-square_simu_plot_1.jpg)
 
 Star
-![./attachments/p1p1-star_simu_plot.jpg](./attachments/p1p1-star_simu_plot.jpg)
+![p1p1-star_simu_plot.jpg](../attachments/p1p1-star_simu_plot.jpg)
 
 ## Controller Statistics
 

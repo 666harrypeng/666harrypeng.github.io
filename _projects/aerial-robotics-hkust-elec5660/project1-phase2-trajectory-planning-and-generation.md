@@ -7,8 +7,6 @@ toc_label: "Project 1 - Phase 2: Trajectory Planning and Generation"
 toc_icon: "tasks"
 ---
 
-# Project 1 - Phase 2: Trajectory Planning and Generation
-
 ## Trajectory Generation Method
 
 - The trajectory is generated using an optimization-based method (minimum snap trajectory generation). In the actual coding implementation, the built-in function `quadprog` from MATLAB is used to solve the constrained Quadratic Programming problem.
@@ -18,16 +16,16 @@ toc_icon: "tasks"
 ## Simulation Figures
 
 Path1
-![./attachments/p1p2-path1.jpg](./attachments/p1p2-path1.jpg)
+![p1p2-path1.jpg](../attachments/p1p2-path1.jpg)
 
 Path2
-![./attachments/p1p2-path2.jpg](./attachments/p1p2-path2.jpg)
+![p1p2-path2.jpg](../attachments/p1p2-path2.jpg)
 
 Path3 (self-designed)
-![./attachments/p1p2-path3.jpg](./attachments/p1p2-path3.jpg)
+![p1p2-path3.jpg](../attachments/p1p2-path3.jpg)
 
 Path4 (self-designed)
-![./attachments/p1p2-path4.jpg](./attachments/p1p2-path4.jpg)
+![p1p2-path4.jpg](../attachments/p1p2-path4.jpg)
 
 ## Controller Statistics
 
@@ -57,4 +55,5 @@ After the optimization of the Controller, the path following becomes smoother an
 
 ## Reference
 
-Parts of implementation is referred to - https://github.com/Garyandtang/ELEC5660-2021/tree/main/project1/proj1phase2/code
+Parts of implementation is referred to - [https://github.com/Garyandtang/ELEC5660-2021/tree/main/project1/proj1phase2/code](https://github.com/Garyandtang/ELEC5660-2021/tree/main/project1/proj1phase2/code)
+

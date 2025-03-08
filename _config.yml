@@ -7,7 +7,7 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "zh-CN"
+locale                   : "en-US"
 site_theme               : "default"
 title                    : "Yiyan's Homepage"
 title_separator          : "-"
@@ -22,13 +22,12 @@ repository               : "666harrypeng/666harrypeng.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "yiyan_profile.png"
+  avatar           : "yiyan_profile.jpg"
   name             : "Yiyan (Harry) Peng"
   pronouns         : "he/him"  
   bio              : "ECE Senior Undergraduate @ HKUST"
   location         : "Hong Kong"
   employer         : "HKUST"
-  uri              : "https://666harrypeng.github.io"
   email            : "ypengbb@connect.ust.hk" 
 
   # Academic websites
@@ -72,7 +71,7 @@ author:
   # weibo            : # Username
   # wikipedia        : # Username
   # xing             : # Username
-  youtube          : "@666harrypeng"
+  youtube          : "666harrypeng"
   # zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings

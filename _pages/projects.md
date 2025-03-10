@@ -1,5 +1,5 @@
 ---
-title: "📌 Projects"               # the title of the page
+title: "Projects"               # the title of the page
 permalink: /projects/           # the path to this page
 layout: single                  # the layout of the page
 toc: true                       # whether to show a table of contents

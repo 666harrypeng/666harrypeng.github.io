@@ -7,8 +7,6 @@ toc_label: "Aerial Robotics"
 toc_icon: "tasks"
 ---
 
-# Aerial Robotics
-
 This is a collection of projects for the course ELEC5660 (Introduction to Aerial Robotics) @ HKUST, 2025 Spring. Instructor: [Prof. Shaojie SHEN](https://ece.hkust.edu.hk/eeshaojie). The whole course's projects are divided into the following sub-projects.
 
 ## Sub-projects

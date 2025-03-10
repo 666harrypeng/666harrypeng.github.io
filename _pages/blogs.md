@@ -1,15 +1,13 @@
 ---
-title: "Blogs"
-permalink: /blogs/
+title: "Posts"
+permalink: /posts/
 layout: single
 toc: true
-toc_label: "Blogs"
+toc_label: "Posts"
 toc_icon: "cog"
 ---
 
-# Blogs
+Here are some of my blog posts. Most of them are my study notes and summaries of different topics.
 
-Here are some of my blogs.
-
-## [ROS](/blogs/ros-notes/)
+## [ROS](/posts/ros-notes/)
 

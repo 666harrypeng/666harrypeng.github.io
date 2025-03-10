@@ -215,7 +215,7 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
-  blogs:
+  posts:
     output: true
     permalink: /:collection/:path/
   teaching:

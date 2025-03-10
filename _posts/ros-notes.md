@@ -1,13 +1,12 @@
 ---
 title: "ROS Notes"
-permalink: /blogs/ros-notes/
+permalink: /posts/ros-notes/
 layout: single
+date: 2025-03-08
 toc: true
 toc_label: "ROS Notes"
 toc_icon: "cog"
 ---
-
-# ROS Notes
 
 Some notes about ROS.
 

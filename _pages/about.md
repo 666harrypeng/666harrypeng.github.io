@@ -20,4 +20,4 @@ My research interests include the intersection of **AI and robotics** (particula
 ## Others
 
 - [Selected Projects](https://666harrypeng.github.io/projects/) : You can find some of my projects here. They are mainly related to robotics and AI.
-- [Blog Posts](https://666harrypeng.github.io/blogs/) : I will post some of my study notes here, for different topics.
+- [Posts](https://666harrypeng.github.io/posts/) : I will post some of my study notes here, for different topics.

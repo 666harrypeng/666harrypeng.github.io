@@ -7,25 +7,43 @@ toc_label: "Project 1 - Phase 2: Trajectory Planning and Generation"
 toc_icon: "tasks"
 ---
 
+- **Keywords**: Trajectory Planning, Optimization-based Trajectory Generation, Minimum Snap Trajectory, (un)constrained Quadratic Programming
+- Coding language: MATLAB
+- Detailed code implementation can be found in the [Github code repo](https://github.com/666harrypeng/elec5660-aerial-robotics)
+
 ## Trajectory Generation Method
 
-- The trajectory is generated using an optimization-based method (minimum snap trajectory generation). In the actual coding implementation, the built-in function `quadprog` from MATLAB is used to solve the constrained Quadratic Programming problem.
+> Design the trajectory for quadrotor given the path (waypoints), and calculate desired states given time. Try to make the trajectory smooth and feasible.
+
+- The trajectory is generated using an optimization-based method (`minimum snap trajectory generation`). In the actual coding implementation, the built-in function `quadprog` from MATLAB is used to solve the constrained Quadratic Programming problem.
 - The time allocation is proportional to the length of each segment of the trajectory (weighted average).
 - At the end of the trajectory, the Quadrotor will hover with the final state if the experiment is still ongoing.
 
 ## Simulation Figures
 
 Path1
-![p1p2-path1.jpg](../attachments/p1p2-path1.jpg)
+
+<div style="display: flex; justify-content: center;">
+    <img src="../attachments/p1p2/p1p2-path1.jpg" alt="p1p2-path1.jpg" style="max-width: 100%; height: auto;"/>
+</div>
 
 Path2
-![p1p2-path2.jpg](../attachments/p1p2-path2.jpg)
+
+<div style="display: flex; justify-content: center;">
+    <img src="../attachments/p1p2/p1p2-path2.jpg" alt="p1p2-path2.jpg" style="max-width: 100%; height: auto;"/>
+</div>
 
 Path3 (self-designed)
-![p1p2-path3.jpg](../attachments/p1p2-path3.jpg)
+
+<div style="display: flex; justify-content: center;">
+    <img src="../attachments/p1p2/p1p2-path3.jpg" alt="p1p2-path3.jpg" style="max-width: 100%; height: auto;"/>
+</div>
 
 Path4 (self-designed)
-![p1p2-path4.jpg](../attachments/p1p2-path4.jpg)
+
+<div style="display: flex; justify-content: center;">
+    <img src="../attachments/p1p2/p1p2-path4.jpg" alt="p1p2-path4.jpg" style="max-width: 100%; height: auto;"/>
+</div>
 
 ## Controller Statistics
 
@@ -49,11 +67,6 @@ The performances on different paths based on RMSE values:
 
 After the optimization of the Controller, the path following becomes smoother and more stable. The trajectory generation is also acceptable.
 
-## Others
-
-- The `Path3` and `Path4` waypoints should be found in the `test_trajectory.m`.
-
 ## Reference
 
-Parts of implementation is referred to - [https://github.com/Garyandtang/ELEC5660-2021/tree/main/project1/proj1phase2/code](https://github.com/Garyandtang/ELEC5660-2021/tree/main/project1/proj1phase2/code)
-
+Some implementations are adapted from this code repository. - [GitHub @ Garyandtang - ELEC5660-2021](https://github.com/Garyandtang/ELEC5660-2021/tree/main/project1/proj1phase2/code)

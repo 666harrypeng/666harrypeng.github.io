@@ -13,4 +13,4 @@ This is a collection of projects for the course ELEC5660 (Introduction to Aerial
 
 - [Project 1 - Phase 1: Controller Design and Simulation](/projects/aerial-robotics-hkust-elec5660/project1-phase1-controller-design-and-simulation/)
 - [Project 1 - Phase 2: Trajectory Planning and Generation](/projects/aerial-robotics-hkust-elec5660/project1-phase2-trajectory-planning-and-generation/)
-
+- [Project 1 - Phase 3: Path Planning and Obstacle Avoidance](/projects/aerial-robotics-hkust-elec5660/project1-phase3-path-planning-obstacle-avoidance/)

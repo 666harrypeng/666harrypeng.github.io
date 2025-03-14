@@ -7,8 +7,6 @@ toc_label: "Intelligent Robots and Embodied AI"
 toc_icon: "tasks"
 ---
 
-# Intelligent Robots and Embodied AI
-
 This is a collection of projects for the course ELEC4260 (Intelligent Robots and Embodied AI) @ HKUST, 2025 Spring. Instructor: [Prof. Ping TAN](https://ece.hkust.edu.hk/pingtan). The whole course's projects are divided into the following sub-projects.
 
 ## Sub-projects

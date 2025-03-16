@@ -2,6 +2,7 @@
 title: "Respiratory Monitoring System"
 permalink: /projects/respiratory-monitoring-system-hkust-fyp/
 layout: single
+date: 2024-08-30
 toc: true
 toc_label: "Respiratory Monitoring System"
 toc_icon: "tasks"

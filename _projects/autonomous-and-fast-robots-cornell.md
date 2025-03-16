@@ -2,6 +2,7 @@
 title: "Autonomous and Fast Robots"
 permalink: /projects/autonomous-and-fast-robots-cornell/
 layout: single
+date: 2024-02-13
 toc: true
 toc_label: "Autonomous and Fast Robots"
 toc_icon: "tasks"

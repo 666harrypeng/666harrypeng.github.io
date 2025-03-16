@@ -2,6 +2,7 @@
 title: "Project 1 - Phase 2: Trajectory Planning and Generation"
 permalink: /projects/aerial-robotics-hkust-elec5660/project1-phase2-trajectory-planning-and-generation/
 layout: single
+date: 2025-03-07
 toc: true
 toc_label: "Project 1 - Phase 2: Trajectory Planning and Generation"
 toc_icon: "tasks"

@@ -2,6 +2,7 @@
 title: "Project 1 - Odometry Mapping and ICP"
 permalink: /projects/intelligent-robots-and-embodied-ai-hkust-elec4260/project1-odometry-mapping-icp/
 layout: single
+date: 2025-03-07
 toc: true
 toc_label: "Project 1 - Odometry Mapping and ICP"
 toc_icon: "tasks"

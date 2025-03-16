@@ -2,6 +2,7 @@
 title: "Project 1 - Phase 1: Controller Design and Simulation"
 permalink: /projects/aerial-robotics-hkust-elec5660/project1-phase1-controller-design-and-simulation/
 layout: single
+date: 2025-02-28
 toc: true
 toc_label: "Project 1 - Phase 1: Controller Design and Simulation"
 toc_icon: "tasks"
@@ -20,7 +21,7 @@ The Quadrotor dynamics is based on the following equations:
 - Motor model: $\dot{\omega}_i = k_m(\omega_i^{des} - \omega_i)$
 - Thrust from individual motor: $F_i = k_F\omega_i^2$
 - Moment from individual motor: $M_i = k_M\omega_i^2$
-- Newton Equation: 
+- Newton Equation:
 
 $$
 m\ddot{p} = 

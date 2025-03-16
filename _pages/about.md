@@ -7,15 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-> Personal website is still under construction ... orz
+> Personal website is well-constructed and ready! 🎉
+>
+> I will continue to update it with my latest projects and research from time to time 🫶
 
 Hi there! I am a senior undergraduate student at the [Hong Kong University of Science and Technology](https://hkust.edu.hk/) (HKUST) from the [Department of Electronic and Computer Engineering (ECE)](https://ece.hkust.edu.hk/). I am fortunate to be advised by Prof. [Jun Zhang](https://ece.hkust.edu.hk/eejzhang) and previously advised by Dr. [Albert Kai-Sun Wong](https://ece.hkust.edu.hk/eealbert). I am currently applying for Fall 2025 MS/PhD in Robotics.
 
 My research interests include the intersection of **AI and robotics** (particularly **embodied AI** in the topics of **vision-language-action models, robotic perception and control**, and also the applications of AI in **healthcare**). I am eager to learn more and take on challenging projects and research opportunities, with passion for making robots' intelligence more tangible and accessible to people by merging AI and robotics to genuinely benefit our society.
-
-<!-- ## Recent News
-
-- 2025.03.08: Birth of my personal website! -->
 
 ## Education
 

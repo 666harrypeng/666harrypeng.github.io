@@ -2,6 +2,7 @@
 title: "Project 1 - Phase 3: Path Planning and Obstacle Avoidance"
 permalink: /projects/aerial-robotics-hkust-elec5660/project1-phase3-path-planning-obstacle-avoidance/
 layout: single
+date: 2025-03-14
 toc: true
 toc_label: "Project 1 - Phase 3: Path Planning and Obstacle Avoidance"
 toc_icon: "tasks"

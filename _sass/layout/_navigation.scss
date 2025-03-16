@@ -371,7 +371,22 @@
    Table of contents navigation
    ========================================================================== */
 
+.page {
+  display: flex;
+  flex-direction: row;
+}
+
+.page__content {
+  flex-grow: 1;
+}
+
 .toc {
+  width: 200px; /* Ensure a fixed width */
+  position: fixed;
+  top: 5em;
+  right: 1em;
+  margin-left: auto; /* Helps align to the right */
+  // margin-right: 1em; /* Add slight right margin for spacing */
   font-family: $sans-serif-narrow;
   color: var(--global-text-color-light);
   text-transform: uppercase;
@@ -393,6 +408,7 @@
 .toc__menu {
   margin: 0;
   padding: 0;
+  padding-left: 0.5em;
   width: 100%;
   list-style: none;
   font-size: 0.8rem;

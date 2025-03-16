@@ -1,13 +1,12 @@
 ---
 title: Lab7 - Kalman Filter
-date: 2024-03-20 22:00:00 +/-0000
+date: 2024-03-20
 math: false
 author: Yiyan Peng
 layout: single
 toc: true
-toc_label: "Lab7 - Kalman Filter"
-toc_icon: "cogs"
 ---
+{% include toc %}
 
 ## Objective
 

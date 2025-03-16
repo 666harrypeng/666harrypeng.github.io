@@ -1,13 +1,13 @@
 ---
 title: Lab8 - Drift Stunts
-date: 2024-04-08 22:00:00 +/-0000
+date: 2024-04-08
 math: true
 author: Yiyan Peng
 layout: single
 toc: true
-toc_label: "Lab8 - Drift Stunts"
-toc_icon: "cogs"
 ---
+
+{% include toc %}
 
 ## Objective
 

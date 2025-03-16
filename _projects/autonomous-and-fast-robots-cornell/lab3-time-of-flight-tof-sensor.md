@@ -1,13 +1,14 @@
 ---
 title: Lab3 - Time of Flight (ToF) Sensors
-date: 2024-02-21 00:05:00 +/-0000
+date: 2024-02-21
 math: true
 author: Yiyan Peng
 layout: single
 toc: true
-toc_label: "Lab3 - Time of Flight (ToF) Sensors"
-toc_icon: "cogs"
 ---
+
+{% include toc %}
+
 ## Objective
 
 The purpose of this lab is to equip the robot with ToF sensors to get the distance information. Once the robots are equipped with sensors, the faster the robot can sample and the more it can trust a sensor reading, the faster it is able to drive.

@@ -1,13 +1,12 @@
 ---
 title: Lab1 - The Artemis board and Bluetooth
-date: 2024-02-13 23:33:00 +/-0000
+date: 2024-02-13
 layout: single
 math: true
 author: Yiyan Peng
 toc: true
-toc_label: "Lab1 - The Artemis board and Bluetooth"
-toc_icon: "cogs"
 ---
+{% include toc %}
 
 ## Objective
 

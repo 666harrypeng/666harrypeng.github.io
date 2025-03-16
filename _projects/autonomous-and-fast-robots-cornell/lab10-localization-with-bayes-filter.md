@@ -1,13 +1,13 @@
 ---
 title: Lab10 - Localization with Bayes Filter
-date: 2024-04-21 23:33:00 +/-0000
+date: 2024-04-21
 math: true
 author: Yiyan Peng
 layout: single
 toc: true
-toc_label: "Lab10 - Localization with Bayes Filter"
-toc_icon: "cogs"
 ---
+
+{% include toc %}
 
 ## Objective
 

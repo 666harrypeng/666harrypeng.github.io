@@ -1,13 +1,13 @@
 ---
 title: Lab9 - Mapping
-date: 2024-04-15 22:00:00 +/-0000
+date: 2024-04-15
 math: true
 author: Yiyan Peng
 layout: single
 toc: true
-toc_label: "Lab9 - Mapping"
-toc_icon: "cogs"
 ---
+
+{% include toc %}
 
 ## Objective
 

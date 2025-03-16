@@ -1,13 +1,13 @@
 ---
 title: Lab2 - IMU
-date: 2024-02-20 23:33:00 +/-0000
+date: 2024-02-20
 math: true
 author: Yiyan Peng
 layout: single
 toc: true
-toc_label: "Lab2 - IMU"
-toc_icon: "cogs"
 ---
+{% include toc %}
+
 ## Objective
 
 The purpose of this lab is to add the IMU to our robot, start running the Artemis & sensors from a battery, and record a stunt on the RC robot.

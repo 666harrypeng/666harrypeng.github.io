@@ -1,13 +1,13 @@
 ---
 title: Lab11 - Localization on the Real Robot
-date: 2024-04-28 23:33:00 +/-0000
+date: 2024-04-28
 math: true
 author: Yiyan Peng
 layout: single
 toc: true
-toc_label: "Lab11 - Localization on the Real Robot"
-toc_icon: "cogs"
 ---
+
+{% include toc %}
 
 ## Objective
 

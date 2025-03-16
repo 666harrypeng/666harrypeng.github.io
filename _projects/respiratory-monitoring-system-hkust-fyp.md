@@ -4,8 +4,6 @@ permalink: /projects/respiratory-monitoring-system-hkust-fyp/
 layout: single
 date: 2024-08-30
 toc: true
-toc_label: "Respiratory Monitoring System"
-toc_icon: "tasks"
 ---
 
 - Group leader, Undergraduate Final Year Project (FYP) (self-proposed), supervised by [Prof. Jun ZHANG](https://ece.hkust.edu.hk/eejzhang).

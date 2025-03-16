@@ -1,13 +1,12 @@
 ---
 title: Lab4 - Motors and Open Loop Control
-date: 2024-03-05 22:00:00 +/-0000
+date: 2024-03-05
 math: true
 author: Yiyan Peng
 layout: single
 toc: true
-toc_label: "Lab4 - Motors and Open Loop Control"
-toc_icon: "cogs"
 ---
+{% include toc %}
 
 ## Objective
 

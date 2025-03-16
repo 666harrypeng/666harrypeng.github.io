@@ -4,10 +4,8 @@ permalink: /projects/intelligent-robots-and-embodied-ai-hkust-elec4260/project1-
 layout: single
 date: 2025-03-07
 toc: true
-toc_sticky: false
-toc_label: "Project 1 - Odometry Mapping and ICP"
-toc_icon: "tasks"
 ---
+
 {% include toc %}
 
 - **Keywords**: Wheel Odometry, LiDAR, Mapping, ICP

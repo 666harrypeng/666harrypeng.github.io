@@ -1,13 +1,12 @@
 ---
 title: Lab6 - PID Orientation Control
-date: 2024-03-18 22:00:00 +/-0000
+date: 2024-03-18
 math: true
 author: Yiyan Peng
 layout: single
 toc: true
-toc_label: "Lab6 - PID Orientation Control"
-toc_icon: "cogs"
 ---
+{% include toc %}
 
 ## Objective
 

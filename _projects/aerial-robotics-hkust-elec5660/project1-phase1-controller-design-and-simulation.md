@@ -4,9 +4,8 @@ permalink: /projects/aerial-robotics-hkust-elec5660/project1-phase1-controller-d
 layout: single
 date: 2025-02-28
 toc: true
-toc_label: "Project 1 - Phase 1: Controller Design and Simulation"
-toc_icon: "tasks"
 ---
+{% include toc %}
 
 - **Keywords**: PID, Quadrotor Dynamics
 - Coding language: MATLAB

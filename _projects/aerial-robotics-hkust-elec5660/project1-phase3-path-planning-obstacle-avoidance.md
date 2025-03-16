@@ -4,9 +4,8 @@ permalink: /projects/aerial-robotics-hkust-elec5660/project1-phase3-path-plannin
 layout: single
 date: 2025-03-14
 toc: true
-toc_label: "Project 1 - Phase 3: Path Planning and Obstacle Avoidance"
-toc_icon: "tasks"
 ---
+{% include toc %}
 
 - **Keywords**: Path Planning, Obstacle Avoidance, A*, Dijkstra's Algorithm
 - Coding language: MATLAB

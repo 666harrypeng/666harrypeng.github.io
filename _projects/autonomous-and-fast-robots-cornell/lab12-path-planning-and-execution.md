@@ -1,13 +1,13 @@
 ---
 title: Lab12 - Path Planning and Execution
-date: 2024-05-14 16:30:00 +/-0000
+date: 2024-05-14
 math: true
 author: Yiyan Peng
 layout: single
 toc: true
-toc_label: "Lab12 - Path Planning and Execution"
-toc_icon: "cogs"
 ---
+
+{% include toc %}
 
 ## Objective
 

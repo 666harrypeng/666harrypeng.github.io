@@ -4,9 +4,9 @@ permalink: /projects/aerial-robotics-hkust-elec5660/project1-phase2-trajectory-p
 layout: single
 date: 2025-03-07
 toc: true
-toc_label: "Project 1 - Phase 2: Trajectory Planning and Generation"
-toc_icon: "tasks"
 ---
+
+{% include toc %}
 
 - **Keywords**: Trajectory Planning, Optimization-based Trajectory Generation, Minimum Snap Trajectory, (un)constrained Quadratic Programming
 - Coding language: MATLAB

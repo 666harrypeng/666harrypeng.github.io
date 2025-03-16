@@ -1,13 +1,12 @@
 ---
 title: Lab5 - Linear PID Distance Control and Linear Extrapolation
-date: 2024-03-12 22:00:00 +/-0000
+date: 2024-03-12
 math: true
 author: Yiyan Peng
 layout: single
 toc: true
-toc_label: "Lab5 - Linear PID Distance Control and Linear Extrapolation"
-toc_icon: "cogs"
 ---
+{% include toc %}
 
 ## Objective
 

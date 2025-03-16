@@ -4,8 +4,6 @@ permalink: /projects/autonomous-and-fast-robots-cornell/
 layout: single
 date: 2024-02-13
 toc: true
-toc_label: "Autonomous and Fast Robots"
-toc_icon: "tasks"
 ---
 
 This is a collection of projects for the course ECE4160/5160 (Fast Robots) @ Cornell University, 2024 Spring. Instructor: [Dr. Jonathan Jaramillo](https://www.engineering.cornell.edu/faculty-directory/jonathan-jaramillo). The whole course's projects are divided into the following sub-projects.

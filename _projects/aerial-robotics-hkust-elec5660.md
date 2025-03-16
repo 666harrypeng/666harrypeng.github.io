@@ -4,10 +4,7 @@ permalink: /projects/aerial-robotics-hkust-elec5660/
 layout: single
 date: 2025-02-01
 toc: true
-toc_label: "Autonomous Aerial Robotics"
-toc_icon: "tasks"
 ---
-{% include toc %}
 
 This is a collection of projects for the course ELEC5660 (Introduction to Aerial Robotics) @ HKUST, 2025 Spring. Instructor: [Prof. Shaojie SHEN](https://ece.hkust.edu.hk/eeshaojie).
 

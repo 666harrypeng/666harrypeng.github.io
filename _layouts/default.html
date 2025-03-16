@@ -4,11 +4,19 @@ layout: compress
 
 {% include base_path %}
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+<!DOCTYPE html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    {% seo %}
+    {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt| strip_html }}" />
+    {% elsif page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% else %}
+    <meta name="description" content="{{ site.description }}" />
+    {% endif %}
   </head>
 
   <body>

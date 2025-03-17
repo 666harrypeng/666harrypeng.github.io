@@ -11,8 +11,8 @@ locale                   : "en-US"
 site_theme               : "default"
 title                    : "Yiyan's Homepage"
 title_separator          : "-"
-name                     : &name "Yiyan (Harry) Peng"
-description              : &description "Yiyan (Harry) Peng's personal academic website - ECE Senior Undergraduate at HKUST, focusing on AI & Robotics."
+name                     : &name "Yiyan Peng"
+description              : &description "Yiyan Peng's personal website - ECE Senior Undergraduate at HKUST, focusing on AI & Robotics."
 url                      : https://666harrypeng.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "666harrypeng/666harrypeng.github.io"
@@ -23,12 +23,13 @@ repository               : "666harrypeng/666harrypeng.github.io"
 author:
   # Biographic information
   avatar           : "yiyan_profile.jpg"
-  name             : "Yiyan (Harry) Peng"
+  name             : "Yiyan Peng"
   pronouns         : "he/him"  
   bio              : "ECE Senior Undergraduate @ HKUST"
   location         : "Hong Kong"
   employer         : "HKUST"
   email            : "ypengbb@connect.ust.hk" 
+  alternate_names  : ["Yiyan (Harry) Peng", "Harry Peng", "Harry PENG", "PENG Yiyan", "Yiyan PENG", "Yiyan Peng", "PENG, Yiyan", "Peng, Yiyan", "Yiyan Harry PENG"]
 
   # Academic websites
   # arxiv            : # URL - Update with the correct link to your profile

@@ -19,3 +19,39 @@
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
+
+<!-- Meta tags for name variations -->
+<meta name="author" content="Yiyan Peng">
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="keywords" content="Yiyan Peng, Harry Peng, PENG Yiyan, Yiyan PENG, PENG, Yiyan, Peng, Yiyan, Yiyan Harry Peng, ECE, HKUST">
+
+<!-- Schema.org markup for Google -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Yiyan Peng",
+  "alternateName": [
+    "Harry Peng",
+    "Yiyan PENG",
+    "PENG, Yiyan",
+    "Peng, Yiyan",
+    "Yiyan Harry PENG"
+  ],
+  "givenName": "Yiyan",
+  "familyName": "Peng",
+  "additionalName": "Harry",
+  "url": "https://666harrypeng.github.io",
+  "image": "{{ site.url }}{{ site.baseurl }}/images/yiyan_profile.jpg",
+  "sameAs": [
+    "https://github.com/666harrypeng",
+    "https://www.linkedin.com/in/yiyan-peng-058a0b252",
+    "https://www.youtube.com/@666harrypeng"
+  ]
+}
+</script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

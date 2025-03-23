@@ -9,7 +9,7 @@ toc: true
 
 - **Keywords**: Path Planning, Obstacle Avoidance, A*, Dijkstra's Algorithm
 - Coding language: MATLAB
-- Detailed code implementation can be found in the [Github code repo](https://github.com/666harrypeng/elec5660-aerial-robotics)
+- Detailed code implementation can be found in the [Github code repo](https://github.com/666harrypeng/elec5660-aerial-robotics/tree/main/project1/proj1-phase3/code)
 
 ## Path Planning
 

@@ -10,7 +10,7 @@ toc: true
 
 - **Keywords**: Trajectory Planning, Optimization-based Trajectory Generation, Minimum Snap Trajectory, (un)constrained Quadratic Programming
 - Coding language: MATLAB
-- Detailed code implementation can be found in the [Github code repo](https://github.com/666harrypeng/elec5660-aerial-robotics)
+- Detailed code implementation can be found in the [Github code repo](https://github.com/666harrypeng/elec5660-aerial-robotics/tree/main/project1/proj1-phase2/code)
 
 ## Trajectory Generation Method
 

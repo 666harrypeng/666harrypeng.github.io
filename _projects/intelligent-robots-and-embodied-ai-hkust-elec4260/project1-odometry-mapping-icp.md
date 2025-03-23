@@ -10,7 +10,7 @@ toc: true
 
 - **Keywords**: Wheel Odometry, LiDAR, Mapping, ICP
 - Coding & Enviroment: C++, ROS, RViz, Gazebo
-- Detailed code implementation can be found in the [Github code repo](https://github.com/666harrypeng/elec4260-embodied-ai-robotics)
+- Detailed code implementation can be found in the [Github code repo](https://github.com/666harrypeng/elec4260-embodied-ai-robotics/tree/main/project1_odometry/src)
 
 > This project needs to implement keyboard control for the TurtleBot, convert motor information into wheel odometry, reading 2d-LiDAR data to construct an occupancy grid map of the environment, and develop a 2D LiDAR odometry system based on ICP algorithm.
 

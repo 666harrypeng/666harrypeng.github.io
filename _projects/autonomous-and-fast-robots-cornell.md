@@ -6,7 +6,11 @@ date: 2024-02-13
 toc: true
 ---
 
-This is a collection of projects for the course ECE4160/5160 (Fast Robots) @ Cornell University, 2024 Spring. Instructor: [Dr. Jonathan Jaramillo](https://www.engineering.cornell.edu/faculty-directory/jonathan-jaramillo). The whole course's projects are divided into the following sub-projects.
+This is a collection of projects for the course ECE4160/5160 (Fast Robots) @ Cornell University, 2024 Spring. Instructor: [Dr. Jonathan Jaramillo](https://www.engineering.cornell.edu/faculty-directory/jonathan-jaramillo).
+
+Detailed code implementation can be found in the [Github code repo](https://github.com/666harrypeng/Fast-Robots).
+
+The whole course's projects are divided into the following sub-projects.
 
 ## Sub-projects
 

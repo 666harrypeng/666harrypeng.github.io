@@ -9,7 +9,7 @@ toc: true
 
 - **Keywords**: PID, Quadrotor Dynamics
 - Coding language: MATLAB
-- Detailed code implementation can be found in the [Github code repo](https://github.com/666harrypeng/elec5660-aerial-robotics)
+- Detailed code implementation can be found in the [Github code repo](https://github.com/666harrypeng/elec5660-aerial-robotics/tree/main/project1/proj1-phase1/code)
 
 ## Controller Design
 

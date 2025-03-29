@@ -42,8 +42,7 @@ where: $P_0$ is the starting point, $P_3$ is the ending point, and $P_1$ and $P_
 
 <div style="display: flex; justify-content: center; text-align: center;">
   <figure>
-    <img src="../attachments/project2/bezier_curve_demonstration.png" alt="Bezier Curve Demonstration" style="max-width: 60%; height: auto;">
-    <figcaption style="font-style: italic; color: gray; text-align: center;">Bezier Curve Demonstration</figcaption>
+    <img src="../attachments/project2/bezier_curve_demonstration.png" alt="Bezier Curve Demonstration" style="max-width: 50%; height: auto;">
   </figure>
 </div>
 
@@ -53,8 +52,7 @@ By expanding the radius of the obstacles, we can create a "safety buffer zone" f
 
 <div style="display: flex; justify-content: center; text-align: center;">
   <figure>
-    <img src="../attachments/project2/grid_inflation_radius.png" alt="Grid Inflation Radius" style="max-width: 60%; height: auto;">
-    <figcaption style="font-style: italic; color: gray; text-align: center;">Grid Inflation Radius Demonstration</figcaption>
+    <img src="../attachments/project2/grid_inflation_radius.png" alt="Grid Inflation Radius" style="max-width: 50%; height: auto;">
   </figure>
 </div>
 

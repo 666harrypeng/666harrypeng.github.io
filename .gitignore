@@ -13,3 +13,5 @@ node_modules
 package-lock.json
 
 .jekyll-metadata
+_projects/.DS_Store
+.DS_Store

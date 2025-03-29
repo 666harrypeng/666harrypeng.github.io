@@ -19,5 +19,11 @@ The whole course's projects are divided into the following sub-projects.
 ## Sub-projects
 
 - [Project 1 - Phase 1: Controller Design and Simulation](/projects/aerial-robotics-hkust-elec5660/project1-phase1-controller-design-and-simulation/)
+  - *Keywords: PID, Quadrotor Dynamics*
 - [Project 1 - Phase 2: Trajectory Planning and Generation](/projects/aerial-robotics-hkust-elec5660/project1-phase2-trajectory-planning-and-generation/)
+  - *Keywords: Trajectory Planning, Optimization-based Trajectory Generation, Minimum Snap Trajectory, (un)constrained Quadratic Programming*
 - [Project 1 - Phase 3: Path Planning and Obstacle Avoidance](/projects/aerial-robotics-hkust-elec5660/project1-phase3-path-planning-obstacle-avoidance/)
+  - *Keywords: Path Planning, Obstacle Avoidance, A\*, Dijkstra's Algorithm*
+- [Project 2 - Phase 1: 3D-2D Pose Estimation (PnP)](/projects/aerial-robotics-hkust-elec5660/project2-phase1-3d-2d-pose-estimation-pnp/)
+  - *Keywords: 3D-2D Pose Estimation, PnP, OpenCV, SVD, Linear Estimation*
+  

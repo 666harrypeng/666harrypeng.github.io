@@ -17,3 +17,6 @@ The whole course's projects are divided into the following sub-projects.
 ## Sub-projects
 
 - [Project 1 - Odometry, Mapping and ICP](/projects/intelligent-robots-and-embodied-ai-hkust-elec4260/project1-odometry-mapping-icp/)
+  - *Keywords: Wheel Odometry, LiDAR, Mapping, ICP*
+- [Project 2 - Path Planning, Control and Exploration](/projects/intelligent-robots-and-embodied-ai-hkust-elec4260/project2-path-planning-control-exploration/)
+  - *Keywords: Bezier Curve, Path Planning (A\*), Control (PID), Frontier Autonomous Exploration*

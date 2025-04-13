@@ -11,12 +11,11 @@ toc: true
 
 ## Project Overview
 
-Construct multi-dimensional respiration datasets, design and implement multimodal AI models for time-series prediction 
-and anomaly detection of respiratory diseases ([sleep apnea](https://en.wikipedia.org/wiki/Sleep_apnea)), and construct wireless real-time monitoring system.
+Construct multi-dimensional respiration datasets, design and implement multimodal AI models for time-series prediction and anomaly detection of respiratory diseases ([sleep apnea](https://en.wikipedia.org/wiki/Sleep_apnea)), and construct wireless end-to-end real-time monitoring system.
 
 Below shows my contributions to the project, including:
 
-- AI model framework design, implementation, and optimization for time-series prediction and anomaly detection (VAE, LSTM, Transformer (Informer))
-- Hardware sensor integration and construction of transmission protocol (ESP32, ESP-NOW)
+- AI model framework design, implementation, and optimization for time-series prediction and anomaly detection (VAE, LSTM, Multi-Head Attention)
+- Hardware sensor integration and construction of transmission protocol (ESP32 boards, ESP-NOW protocol)
 - Multi-modal respiration datasets construction (audio, temperature and humidity signals)
 - Real-time monitoring features construction

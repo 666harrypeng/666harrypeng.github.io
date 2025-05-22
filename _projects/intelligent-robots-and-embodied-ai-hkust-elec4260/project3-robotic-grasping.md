@@ -128,6 +128,24 @@ The validation results of the position loss, orientation loss (sin, cos), and th
   </figure>
 </div>
 
+One of the evaluation results on the same real object (wooden spoon) of the GGCNN1 & GGCNN2 is shown as the following figures, with the classification (segmentation), predicted grasping position and orientation, and the grasping quality:
+
+- GGCNN1:
+<div style="display: flex; justify-content: center; text-align: center;">
+  <figure>
+    <img src="../attachments/project3/eval_GGCNN1_88.png" alt="eval_GGCNN1_88.png" style="max-width: 100%; height: auto;">
+  </figure>
+</div>
+
+- GGCNN2:
+<div style="display: flex; justify-content: center; text-align: center;">
+  <figure>
+    <img src="../attachments/project3/eval_GGCNN2_88.png" alt="eval_GGCNN2_88" style="max-width: 100%; height: auto;">
+  </figure>
+</div>
+
+Based on the visualization results, we can see that the GGCNN2 has a better performance in the grasping position and orientation estimation, and therefore the grasping quality is also better.
+
 The IOU results of the GGCNN1 and GGCNN2 can be found in the following figure:
 
 - GGCNN1: 76/89
@@ -145,6 +163,7 @@ The IOU results of the GGCNN1 and GGCNN2 can be found in the following figure:
     <img src="../attachments/project3/task3_ggcnn2_eval_iou_acc.png" alt="task3_ggcnn2_eval_iou_acc" style="max-width: 100%; height: auto;">
   </figure>
 </div>
+
 
 ### Integrating Grasp Detector in the Pipeline
 

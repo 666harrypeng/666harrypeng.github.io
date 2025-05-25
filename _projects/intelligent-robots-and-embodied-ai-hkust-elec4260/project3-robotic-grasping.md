@@ -92,9 +92,9 @@ This subtask needs to implement a general function block of the Iterative Closet
 
 ### Pipeline Deployment with the Robotic Arm
 
-To make the process more straight and convenient for debugging, I applied another ICP before the raw comparison between the real object captured by the camera and the ground truth object. The refined results after two rounds of ICP can be found in Figure ~\ref{fig:task2_refined_alignments_after_ICP}, with the predicted grasping motion shown. We can see that the prediction is quite acceptable and the general performance can be found in the following Task 2 video.
+To make the process more straight and convenient for debugging, I applied another ICP before the raw comparison between the real object captured by the camera and the ground truth object. The refined results after two rounds of ICP and the predicted grasping motion can be found in the following demonstration video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mv3jLhpn6c4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mv3jLhpn6c4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Task 3 - Data-driven Grasp Detection
 

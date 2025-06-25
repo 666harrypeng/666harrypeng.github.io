@@ -7,8 +7,6 @@ toc_label: "Projects Overview"  # the label of the table of contents
 toc_icon: "cog"                 # the icon of the table of contents
 ---
 
-{% include toc %}
-
 Here is a list of my selected projects. Click on any project to see its details.
 
 ## [Autonomous Aerial Robotics](/projects/aerial-robotics-hkust-elec5660/)
@@ -25,8 +23,9 @@ Here is a list of my selected projects. Click on any project to see its details.
 
 ## [Respiratory Monitoring System](/projects/respiratory-monitoring-system-hkust-fyp/)
 
-*Group Leader, Undergraduate Final Year Project (self-proposed), supervised by [Prof. Jun ZHANG](https://ece.hkust.edu.hk/eejzhang)*
+*Group Leader, Undergraduate Final Year Project (self-proposed). supervised by [Prof. Jun ZHANG](https://ece.hkust.edu.hk/eejzhang)*
 
+- ***Award: ECE Best FYP/T Award 2024-2025 2<sup>nd</sup> Runner-Up***
 - Constructed multi-dimensional respiration datasets, designed and implemented multimodal AI models for time-series prediction and anomaly detection of respiratory diseases (sleep apnea), and constructed wireless real-time monitoring system.
 
 ## [Autonomous and Fast Robots](/projects/autonomous-and-fast-robots-cornell/)

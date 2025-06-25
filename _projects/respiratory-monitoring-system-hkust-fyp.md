@@ -8,6 +8,8 @@ toc: true
 
 {% include toc %}
 
+***Award: ECE Best FYP/T Award 2024-2025 2<sup>nd</sup> Runner-Up***
+
 - Group Leader, Principal Contributor
 - Undergraduate Final Year Project (FYP) (self-proposed), supervised by [Prof. Jun ZHANG](https://ece.hkust.edu.hk/eejzhang)
 - **Keywords**: VAE, LSTM, Multi-Head Attention, Anomaly Detection, Time-Series Prediction, Sleep Apnea, ESP32, ESP-NOW

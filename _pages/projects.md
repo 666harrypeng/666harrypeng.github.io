@@ -19,14 +19,16 @@ Here is a list of my selected projects. Click on any project to see its details.
 
 *Independent Course Projects of ELEC4260 (Intelligent Robots and Embodied AI) @ HKUST, 2025 Spring. Instructor: [Prof. Ping TAN](https://ece.hkust.edu.hk/pingtan)*
 
-- Developed and implemented AI-driven robotics solutions for autonomous navigation and manipulation, based on learning-based algorithms (*[PoseCNN](https://arxiv.org/abs/1711.00199)*), sensor fusion, path planning (*A\**), and grasp synthesis (*[GraspCNN1](https://arxiv.org/abs/1804.05172)* & *[GraspCNN2](https://journals.sagepub.com/doi/10.1177/0278364919859066)*), to enable real-time robot control and environment interaction in lab and project settings.
+- Implemented LiDAR-based SLAM with ICP alignment, A* path planning, Bezier-curve trajectory generation, and PID control to achieve autonomous mobile robot navigation and exploration.
+- Trained and evaluated *[GraspCNN](https://arxiv.org/abs/1804.05172)*, *[GraspCNN2](https://journals.sagepub.com/doi/10.1177/0278364919859066)*, and *[PoseCNN](https://arxiv.org/abs/1711.00199)* models for robotic arm manipulation, designing grasp synthesis strategies and validating the grasping pipeline in simulated and real-world settings.
 
 ## [Respiratory Monitoring System](/projects/respiratory-monitoring-system-hkust-fyp/)
 
-*Group Leader, Undergraduate Final Year Project (self-proposed). supervised by [Prof. Jun ZHANG](https://ece.hkust.edu.hk/eejzhang)*
+*Group Leader, Undergraduate Final Year Project (self-proposed). Supervised by [Prof. Jun ZHANG](https://ece.hkust.edu.hk/eejzhang)*
 
 - ***Award: ECE Best FYP/T Award 2024-2025 2<sup>nd</sup> Runner-Up***
-- Constructed multi-dimensional respiration datasets, designed and implemented multimodal AI models for time-series prediction and anomaly detection of respiratory diseases (sleep apnea), and constructed wireless real-time monitoring system.
+- Designed and implemented a hybrid VAE-LSTM-MHA model for time-series forecasting and anomaly detection of respiratory diseases (sleep apnea) in noisy patient respiration data, achieving over 95% detection accuracy and improving reconstruction quality, especially on multi-modal inputs, by at least 10% over the baseline *[VAE-LSTM](https://ieeexplore.ieee.org/document/9053558)* architecture.
+- Constructed a low-latency wireless communication system using ESP-NOW protocols achieving sustained end-to-end latency under 50ms to ensure robust peer-to-peer connectivity and minimal protocol overhead.
 
 ## [Autonomous and Fast Robots](/projects/autonomous-and-fast-robots-cornell/)
 

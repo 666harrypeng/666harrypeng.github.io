@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Yiyan's Homepage"
 title_separator          : "-"
 name                     : &name "Yiyan Peng"
-description              : &description "Yiyan Peng's personal website - ECE Senior Undergraduate at HKUST, focusing on AI & Robotics."
+description              : &description "Yiyan Peng's personal website - MS @ Northwestern University, focusing on AI & Robotics."
 url                      : https://666harrypeng.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "666harrypeng/666harrypeng.github.io"
@@ -25,10 +25,10 @@ author:
   avatar           : "yiyan_profile.jpg"
   name             : "Yiyan Peng"
   pronouns         : "he/him"  
-  bio              : "ECE Senior Undergraduate @ HKUST"
-  location         : "Hong Kong"
-  employer         : "HKUST"
-  email            : "ypengbb@connect.ust.hk" 
+  bio              : "MS @ Northwestern University"
+  location         : "Evanston, IL, USA"
+  employer         : "Northwestern University"
+  email            : "harrypeng@u.northwestern.edu" 
   alternate_names  : ["Yiyan (Harry) Peng", "Harry Peng", "Harry PENG", "PENG Yiyan", "Yiyan PENG", "Yiyan Peng", "PENG, Yiyan", "Peng, Yiyan", "Yiyan Harry PENG"]
 
   # Academic websites
@@ -59,7 +59,7 @@ author:
   # keybase          : # Username
   # instagram        : # Username
   # lastfm           : # Username
-  linkedin         : "yiyan-peng-058a0b252"
+  linkedin         : "yiyan-peng"
   # mastodon         : # URL
   # medium           : # URL
   # pinterest        : # Username
@@ -72,7 +72,7 @@ author:
   # weibo            : # Username
   # wikipedia        : # Username
   # xing             : # Username
-  youtube          : "666harrypeng"
+  # youtube          : "666harrypeng"
   # zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
@@ -144,8 +144,8 @@ social:
   name                   : *name
   links:                 # An array of links to social media profiles
     - "https://github.com/666harrypeng"
-    - "https://www.linkedin.com/in/yiyan-peng-058a0b252"
-    - "https://www.youtube.com/@666harrypeng"
+    - "https://www.linkedin.com/in/yiyan-peng/"
+    # - "https://www.youtube.com/@666harrypeng"
 
 
 # Analytics

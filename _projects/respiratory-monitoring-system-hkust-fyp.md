@@ -4,6 +4,13 @@ permalink: /projects/respiratory-monitoring-system-hkust-fyp/
 layout: single
 date: 2025-05-23
 toc: true
+
+teaser: /projects/respiratory-monitoring-system-hkust-fyp/attachments/MHA_VAE_ModelStucture_resized.jpg
+authors: "Group Leader, Principal Contributor"
+venue: "HKUST, ECE Final Year Project (FYP)"
+award: "HKUST ECE Best FYP/T Award 2024-2025 2<sup>nd</sup> Runner-Up"
+code: "https://github.com/666harrypeng/Edge-AI-for-healthcare-applications"
+description: 'Designed and implemented a hybrid ***VAE-LSTM-MHA*** model for ***time-series forecasting*** and ***anomaly detection*** in noisy patient respiration data, achieving ***over 95% detection accuracy*** and ***improving reconstruction quality*** — especially on multi-modal inputs — by ***at least 10% over the baseline VAE-LSTM architecture***. Constructed a ***low-latency wireless communication system*** using ***ESP-NOW*** protocols achieving sustained ***end-to-end*** latency under 50ms to ensure robust peer-to-peer connectivity and minimal protocol overhead.'
 ---
 
 {% include toc %}
@@ -14,7 +21,7 @@ toc: true
 - Undergraduate Final Year Project (FYP) (self-proposed), supervised by [Prof. Jun ZHANG](https://ece.hkust.edu.hk/eejzhang)
 - **Keywords**: VAE, LSTM, Multi-Head Attention, Anomaly Detection, Time-Series Prediction, Sleep Apnea, ESP32, ESP-NOW
 - Coding & Enviroment: Python, PyTorch, C++
-- Detailed implementation can be found in [project Github repository](https://github.com/666harrypeng/Edge-AI-for-healthcare-applications/tree/main)
+- Detailed implementation can be found in <i class="fab fa-github"></i> [Github code repo](https://github.com/666harrypeng/Edge-AI-for-healthcare-applications).
 
 ## Project Overview
 

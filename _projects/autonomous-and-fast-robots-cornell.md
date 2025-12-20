@@ -4,11 +4,24 @@ permalink: /projects/autonomous-and-fast-robots-cornell/
 layout: single
 date: 2024-02-13
 toc: true
+
+teaser: /projects/autonomous-and-fast-robots-cornell/_project_teaser/fast_robot_teaser.gif
+# authors: "Yiyan Peng"
+venue: "Cornell University, ECE4160/5160, Independent Course Project"
+code: "https://github.com/666harrypeng/Fast-Robots"
+# report: "link to pdf"
+# slides: "link to slides"
+description: 'Developed and programmed an autonomous driving framework for a fast robot car from scratch, with sensing (***multi-sensor fusion***), localization (***Bayes filter-based localization***), environment mapping, control (***PID***), path planning, and navigation on a microcontroller board (SparkFun RedBoard Artemis Nano).'
 ---
 
 This is a collection of projects for the course ECE4160/5160 (Fast Robots) @ Cornell University, 2024 Spring. Instructor: [Dr. Jonathan Jaramillo](https://www.engineering.cornell.edu/faculty-directory/jonathan-jaramillo).
 
-Detailed code implementation can be found in the [Github code repo](https://github.com/666harrypeng/Fast-Robots).
+Detailed code implementation can be found in the <i class="fab fa-github"></i> [Github code repo](https://github.com/666harrypeng/Fast-Robots).
+
+## Project Overview
+
+Developed and programmed an autonomous driving framework for a fast robot car from scratch, with sensing (multi-sensor fusion), localization (Bayes filter-based localization), environment mapping, control (PID), path planning, and navigation on a microcontroller board (SparkFun RedBoard Artemis Nano).
+
 
 The whole course's projects are divided into the following sub-projects.
 

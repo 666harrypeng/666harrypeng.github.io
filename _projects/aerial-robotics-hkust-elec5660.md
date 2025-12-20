@@ -4,13 +4,20 @@ permalink: /projects/aerial-robotics-hkust-elec5660/
 layout: single
 date: 2025-02-01
 toc: true
+
+teaser: /projects/aerial-robotics-hkust-elec5660/_project_teaser/drone_teaser.gif
+venue: "HKUST, ELEC5660, Independent Course Project"
+code: "https://github.com/666harrypeng/elec5660-aerial-robotics"
+description: 'Implemented ***real-time trajectory planning for quadrotors***, including tuning ***PID controller***, ***minimum-snap trajectory generation*** and obstacle-aware path planning (***A\*, Dijkstra***), to achieve smooth and safe autonomous navigation. Developed vision-based localization and state estimation pipelines: applied ***PnP pose estimation***, ***stereo visual odometry***, and fused IMU & vision data ***via augmented-state EKF***, and validated in simulation and real-world flight tests.'
 ---
 
 This is a collection of projects for the course ELEC5660 (Introduction to Aerial Robotics) @ HKUST, 2025 Spring. Instructor: [Prof. Shaojie SHEN](https://ece.hkust.edu.hk/eeshaojie).
 
+Detailed code implementation can be found in the <i class="fab fa-github"></i> [Github code repo](https://github.com/666harrypeng/elec5660-aerial-robotics).
+
 ## Project Overview
 
-Develop ***control algorithms***, ***trajectory planning***, and ***sensor fusion techniques*** for an autonomous aerial robot by
+Developed ***control algorithms***, ***trajectory planning***, and ***sensor fusion techniques*** for an autonomous aerial robot by
 utilizing ***rigid-body dynamics***, ***A\* path planning***, ***PnP-based localization***, ***visual odometry***, and ***(augmented state) Extended Kalman Filter (EKF)-based state estimation*** to enable ***vision-based indoor navigation*** and ***real-time flight control***.
 
 The whole course's projects are divided into the following sub-projects.

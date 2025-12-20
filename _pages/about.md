@@ -13,6 +13,50 @@ Previously, I finished my undergraduate study at the [Hong Kong University of Sc
 
 My research interests include the intersection of **AI and robotics** (particularly **embodied AI** in the topics of **vision-language-action models, robotic perception and manipulation**, and also the applications of AI in **healthcare**). I am eager to learn more and take on challenging projects and research opportunities, with passion for making robots' intelligence more tangible and accessible to people by merging AI and robotics to genuinely benefit our society.
 
+## Projects
+
+{% for project in site.projects reversed %}
+  {% if project.teaser %}
+  <div class="project-container">
+    <div class="project-image">
+      <a href="{{ project.url | relative_url }}">
+        <img src="{{ project.teaser | relative_url }}" alt="{{ project.title }}">
+      </a>
+    </div>
+    <div class="project-details">
+      <div class="project-title">
+           <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+      </div>
+      <div class="project-authors">
+        {{ project.authors }}
+      </div>
+      <div class="project-venue">
+        {{ project.venue }}
+      </div>
+      {% if project.award %}
+      <div class="project-award">
+        🏆 {{ project.award }}
+      </div>
+      {% endif %}
+      <div class="project-links">
+        {% if project.report %}
+          [<a href="{{ project.report }}">Technical Report</a>]
+        {% endif %}
+        {% if project.slides %}
+          [<a href="{{ project.slides }}">Slides</a>]
+        {% endif %}
+        {% if project.code %}
+          [<a href="{{ project.code }}"><i class="fab fa-github"></i> Code</a>]
+        {% endif %}
+      </div>
+      <div class="project-description">
+        {{ project.description | markdownify }}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
+
 ## Education
 
 - M.S. in Computer Engineering, Northwestern University, Sep 2025 - May 2027 (Expected)
@@ -21,5 +65,4 @@ My research interests include the intersection of **AI and robotics** (particula
 
 ## Others
 
-- [Selected Projects](https://666harrypeng.github.io/projects/) : You can find some of my projects here. They are mainly related to robotics and AI.
 - [Posts](https://666harrypeng.github.io/posts/) : I will post some of my study notes here occasionally, for different topics.

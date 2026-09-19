@@ -1,3 +1,6 @@
-<script src="{{ base_path }}/assets/js/main.min.js"></script>
+<script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/project-videos.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/site-navigation.js' | relative_url }}" defer></script>
+{% if page.collection == 'projects' %}<script src="{{ '/assets/js/project-details.js' | relative_url }}" defer></script>{% endif %}
 
 {% include analytics.html %}

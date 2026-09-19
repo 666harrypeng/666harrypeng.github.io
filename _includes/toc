@@ -1,7 +1,5 @@
-<aside class="sidebar__right">
-<nav class="toc" markdown="1">
-<header><h4 class="nav__title"><i class="fa fa-{{ include.icon | default: 'file-text' }}"></i> {{ include.title | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
+<nav class="toc-inline" aria-label="{{ include.title | default: page.toc_label | default: 'Contents' | escape }}" markdown="1">
+<header><h4 class="toc-inline__title"><i class="fas fa-{{ include.icon | default: 'file-alt' }}" aria-hidden="true"></i> {{ include.title | default: page.toc_label | default: "Contents" }}</h4></header>
 *  Auto generated table of contents
-{:toc .toc__menu}
+{:toc .toc-inline__menu}
 </nav>
-</aside>

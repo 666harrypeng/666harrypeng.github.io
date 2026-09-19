@@ -2,6 +2,5 @@ User-agent: *
 Allow: /
 Sitemap: https://666harrypeng.github.io/sitemap.xml
 
-Disallow: /assets/js/
 Disallow: /.sass-cache/
-Disallow: /_site/ 
+Disallow: /_site/

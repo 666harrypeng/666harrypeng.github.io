@@ -15,3 +15,12 @@ package-lock.json
 .jekyll-metadata
 _projects/.DS_Store
 .DS_Store
+
+# Local release checks and working notes are not part of the public repository.
+/scripts/
+/.superpowers/
+/_new/
+/.jekyll-cache/
+/docs/*
+!/docs/adding-site-content.md
+!/docs/templates/

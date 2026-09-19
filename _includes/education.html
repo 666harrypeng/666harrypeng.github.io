@@ -1,0 +1,16 @@
+<div class="edu-list">
+{%- for e in site.data.education %}
+  <div class="edu-row">
+    {%- if e.logo %}
+    <div class="edu-row__logo">
+      <img src="{{ e.logo | relative_url }}" alt="{{ e.institution | escape }}" loading="lazy">
+    </div>
+    {%- endif %}
+    <div class="edu-row__text">
+      <p class="edu-row__degree">{{ e.degree }}</p>
+      <p class="edu-row__inst">{{ e.institution }}</p>
+      <p class="edu-row__dates">{{ e.dates }}</p>
+    </div>
+  </div>
+{%- endfor %}
+</div>

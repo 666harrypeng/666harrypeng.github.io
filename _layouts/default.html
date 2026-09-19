@@ -2,21 +2,11 @@
 layout: compress
 ---
 
-{% include base_path %}
-
-<!DOCTYPE html>
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+<!doctype html>
+<html lang="en" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
-    {% seo %}
-    {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    {% elsif page.description %}
-    <meta name="description" content="{{ page.description }}" />
-    {% else %}
-    <meta name="description" content="{{ site.description }}" />
-    {% endif %}
   </head>
 
   <body>
@@ -24,13 +14,17 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    {{ content }}
+    <div id="main" role="main">
+      {% include sidebar.html %}
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            {{ content }}
+          </section>
+        </div>
+      </article>
     </div>
 
     {% include scripts.html %}

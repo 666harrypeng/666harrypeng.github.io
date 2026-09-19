@@ -2,136 +2,523 @@
 ---
 
 /*
- * This file controls what is imported from /_sass
+ *    Minimal Mistakes Jekyll Theme
  *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
+ *  - Michael Rose
+ *  - mademistakes.com
+ *  - https://twitter.com/mmistakes
+ *
+*/
 
-@import 
-    "vendor/breakpoint/breakpoint",
+@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "variables";
+@import "mixins";
+@import "vendor/susy/susy";
 
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' }}",
+@import "reset";
+@import "base";
 
-    "include/mixins",
-    "vendor/susy/susy",
+@import "utilities";
+@import "animations";
+@import "tables";
+@import "buttons";
+@import "notices";
+@import "masthead";
+@import "navigation";
+@import "footer";
+@import "syntax";
 
-    "layout/reset",
-    "layout/base",
+@import "forms";
 
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
+@import "page";
+@import "archive";
+@import "sidebar";
 
-    "layout/forms",
+@import "vendor/font-awesome/fontawesome";
+@import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/brands";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
 
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands",
-    "vendor/magnific-popup/magnific-popup"
-;
+.paper-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px #efefef solid;
+    padding: 2em 0 2em 0;
 
-/* Custom Project Layout */
-.project-container {
+
+    .paper-box-image{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        order: 2;
+        img {
+            max-width: 400px;
+            box-shadow: 3px 3px 6px #888;
+            object-fit: cover;
+        }
+    }
+
+    .paper-box-text{
+        max-width: 100%;
+        order: 1;
+    }
+
+    @include breakpoint($medium) {
+        .paper-box-image{
+            justify-content: left;
+            min-width: 200px;
+            max-width: 40%;
+            order: 1;
+        }
+
+        .paper-box-text{
+            justify-content: left;
+            padding-left: 2em;
+            max-width: 60%;
+            order: 2;
+        }
+
+    }
+
+
+}
+
+$scroll_offset : 2em;
+h1:before, .anchor:before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: $scroll_offset;
+    margin-top: -$scroll_offset;
+}
+
+.badge {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    margin-top: .5em;
+    margin-left: -.5em;
+    color: white;
+    background-color: #00369f;
+    font-size: .8em;
+}
+/* ===== Inline table of contents (project detail pages) =====
+   AcadHomepage zeroes $right-sidebar-width, so the original floating
+   aside would render invisible. Rendered inline instead. */
+.toc-inline {
+  margin: 1.2em 0 1.8em;
+  padding: 0.9em 1.2em;
+  border: 1px solid #e3e7ec;
+  border-left: 3px solid #00369f;
+  border-radius: 4px;
+  background: #fafbfc;
+  font-size: 0.86em;
+
+  &__title {
+    margin: 0 0 0.5em;
+    font-size: 1em;
+    font-weight: 600;
+    i { margin-right: 0.4em; }
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.2em;
+    list-style: disc;
+
+    ul { margin: 0.15em 0 0.15em 0; }
+  }
+
+  li { margin: 0.12em 0; line-height: 1.45; }
+
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+}
+
+/* ===== Project detail pages =====
+   These pages render no left rail, so the susy float would leave a ~235px
+   empty indent on the left. Centre the column instead. */
+@include breakpoint($large) {
+  .page:has(.project-detail) {
+    float: none;
+    width: 100%;
+    max-width: 1092px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// The nested detail body must stay in flow so its footer follows the content.
+.page .page__inner-wrap .project-detail > .page__content {
+  float: none;
+  display: flow-root;
+}
+
+.project-detail {
+  &__header { margin-bottom: 1.4em; }
+
+  &__authors,
+  &__venue,
+  &__date { margin: 0 0 0.2em; font-size: 0.9em; }
+
+  &__venue { font-style: italic; color: #555; }
+  &__date  { color: #666; }
+  &__award { margin: 0.3em 0; color: #b3392f; font-weight: 600; font-size: 0.9em; }
+
+  &__footer {
+    margin-top: 2.5em;
+    padding-top: 1em;
+    border-top: 1px solid #e3e7ec;
+    font-size: 0.9em;
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  }
+}
+
+.project-detail {
+  h2[id], h3[id], h4[id] { scroll-margin-top: 5rem; }
+
+  // Keep wide equations complete and locally scrollable on narrow screens.
+  mjx-container[display="true"] {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.3em 0;
+
+    > mjx-math {
+      display: block;
+      width: max-content;
+      margin: 0 auto;
+    }
+  }
+}
+
+/* Detail-page images and shared card media have separate sizing rules. */
+.page__content img:not(.card-media__asset) { max-width: 100%; height: auto; }
+
+/* ===== Research card (shared by Publications and Projects) ===== */
+.research-list,
+.project-list {
+  display: grid;
+  gap: 1em;
+}
+
+.research-card {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  margin-bottom: 40px;
-  align-items: flex-start;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 20px;
+  gap: 1.5em;
+  align-items: center;
+  padding: 1.2em 1.4em;
+  border: 1px solid #e8ecf1;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+  @include breakpoint(max-width $medium) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.9em;
+    padding: 1em;
+  }
 }
 
-.project-container:last-child {
-  border-bottom: none;
+@media (hover: hover) and (pointer: fine) {
+  .research-card:hover {
+    transform: translateY(-3px);
+    border-color: #d4dce6;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.09);
+  }
 }
 
-.project-image {
-  flex: 0 0 35%; 
-  max-width: 350px; /* Adjust this value to change max width */
+.research-card:focus-within {
+  border-color: #9fb4cc;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
-.project-image img {
+@media (prefers-reduced-motion: reduce) {
+  .research-card {
+    transition: none;
+    &:hover { transform: none; }
+  }
+}
+
+.card-media {
+  flex: 0 0 36%;
+  max-width: 380px;
+  min-width: 0;
+  @include breakpoint(max-width $medium) {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: none;
+  }
+  a { display: block; text-decoration: none; }
+}
+
+.card-media__asset {
+  /* Preserve each figure/video's intrinsic ratio. Dimensions in the markup
+     reserve space before lazy assets load. */
+  display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: transparent;
+  box-shadow: none;
 }
 
-.project-details {
-  flex: 1;
+.card-media__placeholder {
+  aspect-ratio: 16 / 9;
+  background: repeating-linear-gradient(45deg,#f4f6f8,#f4f6f8 8px,#eef1f4 8px,#eef1f4 16px);
 }
 
-.project-title {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-bottom: 0.2em;
+.publication-note {
+  font-size: 0.82em;
+  color: #666;
 }
 
-.project-title a {
-    text-decoration: none;
-    color: var(--global-link-color); /* Use theme's global link color */
+.research-card__body { flex: 1 1 auto; min-width: 0; }
+
+.research-card__title {
+  margin: 0 0 0.25em;
+  font-size: 1.05em;
+  line-height: 1.35;
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
 }
 
-.project-title a:hover {
-    text-decoration: underline;
-    color: var(--global-link-color-hover); /* Use theme's global link hover color */
+.research-card__authors,
+.research-card__venue,
+.research-card__award {
+  margin: 0 0 0.2em;
+  font-size: 0.88em;
+  line-height: 1.4;
 }
 
-.project-authors {
-  font-size: 0.9em;
-  margin-bottom: 0.2em;
+.research-card__venue { font-style: italic; color: #555; }
+.research-card__award { color: #b3392f; font-weight: 600; }
+.research-card__authors p { margin: 0; }
+
+.research-card__authors strong {
+  font-weight: 800;
+  color: #20252b;
 }
 
-.project-venue {
-  font-style: italic;
-  font-size: 0.9em;
-  margin-bottom: 0.5em;
-  color: #555;
+.research-card__desc {
+  margin-top: 0.5em;
+  font-size: 0.92em;
+  line-height: 1.55;
+  text-align: left;              /* never justify - causes word-spacing rivers */
+  p { margin: 0 0 0.4em; }
+  p:last-child { margin-bottom: 0; }
+  ul { margin: 0; padding-left: 1.15em; }
+  li { margin: 0.2em 0; }
 }
 
-.project-award {
-  color: #d9534f;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 0.9em;
-  margin-bottom: 0.5em;
+/* ===== Pill badges ===== */
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin: 0.5em 0 0;
 }
 
-.project-links {
-    margin-bottom: 0.8em;
+.badge-pill {
+  display: inline-block;
+  padding: 0.12em 0.65em;
+  border: 1px solid #cfd8e3;
+  border-radius: 999px;
+  background: #f3f6fa;
+  color: #23527c !important;
+  font-size: 0.78em;
+  line-height: 1.65;
+  text-decoration: none !important;
+  white-space: nowrap;
+
+  &:hover { background: #e4ebf4; border-color: #9fb4cc; }
+  i { margin-right: 0.25em; }
 }
 
-.project-links a {
-  margin-right: 8px;
-  font-size: 0.9em;
-  font-weight: bold;
-}
+/* ===== Sub-page list on a parent project detail page ===== */
+.subpage-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-.project-description {
-  font-size: 0.95em;
-  line-height: 1.5;
-  text-align: justify;
-}
-
-@media (max-width: 768px) {
-  .project-container {
-    flex-direction: column;
+  li {
+    padding: 0.4em 0;
+    border-bottom: 1px solid #f0f2f4;
+    font-size: 0.93em;
   }
-  .project-image {
-    flex: 0 0 auto;
-    max-width: 100%;
-    width: 100%;
-    margin-bottom: 15px;
+  li:last-child { border-bottom: 0; }
+
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  &__date { margin-left: 0.5em; font-size: 0.85em; color: #777; }
+}
+
+/* ===== Typography corrections (vs the old site) ===== */
+.page__content a { text-decoration: none; }
+.page__content a:hover { text-decoration: underline; }
+.page__content p { text-align: left; }
+
+/* ===== Sidebar =====
+   Spacing and icon colour are the TEMPLATE's own (_sass/_sidebar.scss plus the
+   .social-icons brand colours in _utilities.scss). Overriding them here is what
+   made the column cramped and the icons grey, so nothing is overridden now -
+   only the pronouns line, which the template has no rule for. */
+.author__pronouns { margin: 0.1em 0 0.3em; font-size: 0.85em; color: #6b7178; }
+
+// Contact links stay reachable when the desktop sidebar list is hidden.
+.author__mobile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15em 0.85em;
+  margin: 0.35em 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.82em;
+
+  li { margin: 0; }
+  a { display: inline-block; padding: 0.3em 0; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  i { margin-right: 0.2em; }
+
+  @include breakpoint($large) { display: none; }
+}
+
+@include breakpoint(max-width ($large - 1px)) {
+  .profile_box > .author__urls-wrapper { display: none; }
+}
+
+/* ===== Education rows ===== */
+.edu-row {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.75em 0;
+  border-bottom: 1px solid #f2f4f6;
+
+  &:last-child { border-bottom: 0; }
+
+  &__logo {
+    flex: 0 0 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img { max-width: 52px; max-height: 42px; object-fit: contain; }
+  }
+
+  &__text { flex: 1 1 auto; min-width: 0; }
+  &__degree { margin: 0; font-weight: 600; font-size: 0.96em; }
+  &__inst   { margin: 0; font-size: 0.9em; }
+  &__dates  { margin: 0; font-size: 0.82em; font-style: italic; color: #666; }
+}
+
+/* ===== Section headings ===== */
+.page__content h1 {
+  margin-top: 1.6em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #e8ebee;
+  font-size: 1.5em;
+}
+.page__content h1:first-of-type { margin-top: 0.2em; }
+
+/* News list */
+.page__content > ul > li { line-height: 1.6; }
+
+/* ===== Notes list ===== */
+.notes-list {
+  margin: 0.4em 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0.55em 0;
+    border-bottom: 1px solid #f0f2f4;
+    font-size: 0.95em;
+  }
+  li:last-child { border-bottom: 0; }
+
+  &__title { font-weight: 600; text-decoration: none; }
+  &__title:hover { text-decoration: underline; }
+
+  &__blurb {
+    display: block;
+    margin-top: 0.15em;
+    font-size: 0.88em;
+    color: #666;
+  }
+
+  &__back {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid #e3e7ec;
+    font-size: 0.9em;
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  }
+}
+
+.notes-list__back {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #e3e7ec;
+  font-size: 0.9em;
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+}
+
+/* ===== Project attribute block (above the TOC) =====
+   One fixed place for every attribute-like field, so a reader always finds
+   role / venue / date / award / keywords / stack / links in the same spot. */
+.proj-meta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35em 1.1em;
+  margin: 1em 0 1.4em;
+  padding: 1em 1.2em;
+  border: 1px solid #e6eaef;
+  border-left: 3px solid #00369f;
+  border-radius: 5px;
+  background: #fafbfc;
+  font-size: 0.92em;
+
+  dt {
+    margin: 0;
+    font-size: 0.82em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #78828e;
+    line-height: 1.75;
+  }
+
+  dd {
+    margin: 0;
+    line-height: 1.55;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    p { margin: 0; }
+  }
+
+  &__award { color: #b3392f; font-weight: 600; }
+  &__kw    { color: #3a424d; }
+
+  .badge-row { margin: 0.1em 0 0; }
+
+  @include breakpoint(max-width $medium) {
+    grid-template-columns: 1fr;
+    gap: 0.1em;
+    dt { margin-top: 0.5em; }
   }
 }

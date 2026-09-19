@@ -1,0 +1,21 @@
+{%- assign it = include.item -%}
+{%- assign href = it.external_url | default: it.url -%}
+<div class="research-card{% if it.collection == 'publications' %} research-card--publication{% endif %}">
+  {% include card-media.html item=it %}
+
+  <div class="research-card__body">
+    <h3 class="research-card__title">
+      <a href="{{ href | relative_url }}">{{ it.title }}</a>
+    </h3>
+
+    {% if it.authors %}<div class="research-card__authors">{{ it.authors | markdownify }}</div>{% endif %}
+    {% if it.venue %}<p class="research-card__venue">{{ it.venue }}</p>{% endif %}
+    {% if it.award %}<p class="research-card__award">🏆 {{ it.award }}</p>{% endif %}
+
+    {% include badges.html item=it %}
+
+    {% if it.description %}
+      <div class="research-card__desc">{{ it.description | markdownify }}</div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,4 @@
+# 笔记正文在 Notion 上,这里直接外链,不多一层跳转。
+- title: "ROS"
+  url: "https://app.notion.com/p/harry-yypeng/ROS-194522abfde58077b855c8b5ea4d29a5"
+  blurb: "ROS 1 (Noetic) notes (e.g. catkin workspaces and builds, publisher/subscriber nodes, launch files, and a Docker + noVNC setup for GUI tools)."

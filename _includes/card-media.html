@@ -1,0 +1,19 @@
+{%- assign it = include.item -%}
+{%- assign href = it.external_url | default: it.url -%}
+<div class="card-media">
+  <a href="{{ href | relative_url }}" aria-label="{{ it.title | escape }}">
+    {%- if it.teaser_video -%}
+      <video class="card-media__asset project-teaser" muted loop playsinline preload="none" aria-hidden="true"
+             {% if it.teaser_width and it.teaser_height %}width="{{ it.teaser_width }}" height="{{ it.teaser_height }}" style="aspect-ratio: {{ it.teaser_width }} / {{ it.teaser_height }};"{% endif %}
+             {% if it.teaser %}poster="{{ it.teaser | relative_url }}"{% endif %}>
+        <source data-src="{{ it.teaser_video | relative_url }}" type="video/mp4">
+      </video>
+    {%- elsif it.teaser -%}
+      <img class="card-media__asset" loading="lazy" decoding="async"
+           {% if it.teaser_width and it.teaser_height %}width="{{ it.teaser_width }}" height="{{ it.teaser_height }}" style="aspect-ratio: {{ it.teaser_width }} / {{ it.teaser_height }};"{% endif %}
+           src="{{ it.teaser | relative_url }}" alt="{{ it.title | escape }}">
+    {%- else -%}
+      <div class="card-media__asset card-media__placeholder" aria-hidden="true"></div>
+    {%- endif -%}
+  </a>
+</div>

@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+{%- comment -%}
+  Detail page for a project and for each nested sub-page (labs, phases).
+
+  A sub-page lives at _projects/<parent>/<name>.md, so its parent is simply
+  _projects/<parent>.md - no mapping file needed. This holds because the URL
+  restructure gave every project a directory named after its own slug.
+
+  Core Liquid only: `push` and `remove_last` are not dependable on Jekyll 3.10.
+{%- endcomment -%}
+
+{%- assign rel = page.path | remove_first: '_projects/' -%}
+{%- assign is_subpage = false -%}
+{%- assign parent_url = nil -%}
+{%- assign parent_title = nil -%}
+
+{%- if rel contains '/' -%}
+  {%- assign is_subpage = true -%}
+  {%- assign parts = rel | split: '/' -%}
+  {%- assign parent_path = '_projects/' | append: parts[0] | append: '.md' -%}
+  {%- for p in site.projects -%}
+    {%- if p.path == parent_path -%}
+      {%- assign parent_url = p.url -%}
+      {%- assign parent_title = p.title -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+<article class="project-detail" itemscope itemtype="http://schema.org/CreativeWork">
+  <header class="project-detail__header">
+    {%- if is_subpage and parent_url %}
+    <p class="project-detail__parent">
+      <a href="{{ parent_url | relative_url }}">↑ {{ parent_title | default: "Project" }}</a>
+    </p>
+    {%- endif %}
+
+    <h1 class="page__title" itemprop="headline">{{ page.title }}</h1>
+
+    {%- comment -%} All attribute-like fields render here, above the TOC. {%- endcomment -%}
+    {% include project-meta.html item=page %}
+  </header>
+
+  <section class="page__content" itemprop="text">
+    {{ content }}
+  </section>
+
+  <footer class="project-detail__footer">
+    {%- if is_subpage and parent_url %}
+      <a href="{{ parent_url | relative_url }}">← Back to {{ parent_title | default: "the project" }}</a>
+    {%- else %}
+      <a href="{{ '/#projects' | relative_url }}">← Back to all projects</a>
+    {%- endif %}
+  </footer>
+</article>

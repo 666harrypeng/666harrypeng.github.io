@@ -1,0 +1,13 @@
+# `logo` is optional - leave blank and the row renders text-only, no broken icon.
+- logo: /images/logos/northwestern.png
+  degree: "M.S. in Computer Engineering"
+  institution: "Northwestern University"
+  dates: "Sep 2025 - May 2027 (Expected)"
+- logo: /images/logos/hkust.svg
+  degree: "B.Eng. in Electronic Engineering"
+  institution: "The Hong Kong University of Science and Technology"
+  dates: "Sep 2021 - May 2025"
+- logo: /images/logos/cornell.png
+  degree: "Non-Degree Exchange, Electrical and Computer Engineering"
+  institution: "Cornell University"
+  dates: "Jan 2024 - May 2024"

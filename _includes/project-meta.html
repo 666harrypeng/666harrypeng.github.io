@@ -1,0 +1,68 @@
+{%- comment -%}
+  Project attribute block. Every attribute-like field lives HERE, above the
+  table of contents, in one fixed order - so a reader always finds role, venue,
+  date, award, links, keywords and stack in the same place on every project
+  page. Body prose starts after it and carries no metadata.
+
+  Fields are all optional; a row appears only when its front-matter key is set.
+    role:     "Group Leader, Principal Contributor"
+    venue:    "HKUST, ECE Final Year Project (FYP)"
+    advisor:  "[Prof. Jun ZHANG](https://...)"   (Markdown allowed)
+    date:     2025-05-19
+    award:    "ECE Best FYP/T Award 2024-2025 2nd Runner-Up"
+    keywords: "VAE, LSTM, Multi-Head Attention"      (string or list)
+    stack:    "Python, PyTorch, C++"
+    code: / report: / slides: / arxiv: / website: / pdf: / video:  -> badges
+{%- endcomment -%}
+{%- assign it = include.item -%}
+
+<dl class="proj-meta">
+
+  {%- comment -%} `authors:` is where the role already lived on these pages. {%- endcomment -%}
+  {%- assign _role = it.role | default: it.authors -%}
+  {%- if _role %}
+  <dt>Role</dt><dd>{{ _role | markdownify }}</dd>
+  {%- endif %}
+
+  {%- if it.venue %}
+  <dt>Venue</dt><dd>{{ it.venue }}</dd>
+  {%- endif %}
+
+  {%- if it.advisor %}
+  <dt>Advisor</dt><dd>{{ it.advisor | markdownify | remove: '<p>' | remove: '</p>' | strip }}</dd>
+  {%- endif %}
+
+  {%- if it.date %}
+  <dt>Date</dt>
+  <dd><time datetime="{{ it.date | date_to_xmlschema }}">{{ it.date | date: "%B %Y" }}</time></dd>
+  {%- endif %}
+
+  {%- if it.award %}
+  <dt>Award</dt><dd class="proj-meta__award">🏆 {{ it.award }}</dd>
+  {%- endif %}
+
+  {%- if it.keywords %}
+  <dt>Keywords</dt>
+  <dd class="proj-meta__kw">
+    {%- capture keywords -%}
+    {%- if it.keywords.first -%}
+      {{ it.keywords | join: " · " }}
+    {%- else -%}
+      {{ it.keywords }}
+    {%- endif -%}
+    {%- endcapture -%}
+    {{ keywords | markdownify }}
+  </dd>
+  {%- endif %}
+
+  {%- if it.stack %}
+  <dt>Stack</dt><dd>{{ it.stack | markdownify }}</dd>
+  {%- endif %}
+
+  {%- capture badges %}{% include badges.html item=it %}{% endcapture -%}
+  {%- assign badges = badges | strip -%}
+  {%- if badges != "" %}
+  <dt>Links</dt><dd>{{ badges }}</dd>
+  {%- endif %}
+
+</dl>

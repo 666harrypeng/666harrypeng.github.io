@@ -1,0 +1,21 @@
+{%- comment -%}
+  Pill links built from front matter. Every badge carries an icon - icons read
+  faster than words, and the GitHub mark in particular is instantly recognisable.
+
+  Icon names must exist in the bundled Font Awesome 5 / Academicons; FA6 names
+  render blank. scripts/check_fa_icons.sh validates them.
+{%- endcomment -%}
+{%- assign it = include.item -%}
+{%- capture badge_html -%}
+  {%- if it.website %}<a class="badge-pill" href="{{ it.website }}"><i class="fas fa-globe" aria-hidden="true"></i> {% if it.collection == 'publications' %}Website{% else %}Project Page{% endif %}</a>{% endif -%}
+  {%- if it.paper %}<a class="badge-pill" href="{{ it.paper }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>{% endif -%}
+  {%- if it.project %}<a class="badge-pill" href="{{ it.project }}"><i class="fas fa-globe"></i> Project Page</a>{% endif -%}
+  {%- if it.arxiv %}<a class="badge-pill" href="{{ it.arxiv }}"><i class="ai ai-arxiv"></i> arXiv</a>{% endif -%}
+  {%- if it.pdf %}<a class="badge-pill" href="{{ it.pdf }}"><i class="fas fa-file-pdf"></i> PDF</a>{% endif -%}
+  {%- if it.report %}<a class="badge-pill" href="{{ it.report }}"><i class="fas fa-file-alt"></i> Report</a>{% endif -%}
+  {%- if it.slides %}<a class="badge-pill" href="{{ it.slides }}"><i class="fas fa-file-powerpoint"></i> Slides</a>{% endif -%}
+  {%- if it.video %}<a class="badge-pill" href="{{ it.video }}"><i class="fas fa-play-circle"></i> Video</a>{% endif -%}
+  {%- if it.code %}<a class="badge-pill" href="{{ it.code }}"><i class="fab fa-github"></i> Code</a>{% endif -%}
+{%- endcapture -%}
+{%- assign badge_html = badge_html | strip -%}
+{%- if badge_html != "" %}<div class="badge-row">{{ badge_html }}</div>{% endif -%}

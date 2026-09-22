@@ -28,15 +28,15 @@ and Dr. [Albert Kai-Sun Wong](https://seng.hkust.edu.hk/about/people/faculty/kai
 
 # 🔬 Research Interests
 
-My research interests center on **robot learning and embodied AI**, with a focus on
-**representations and learning mechanisms for robot foundation models**. I am
-particularly interested in:
+My research interests lie in **robot learning and embodied AI**, particularly
+reliable and adaptive robotic manipulation.
 
-- **World models for data-efficient learning** — using predictive models to support policy learning and adaptation.
-- **Adaptive, long-horizon manipulation** — connecting memory, reasoning, and feedback-driven action.
+My prior work on specification-grounded safety evaluation highlighted the gap
+between task success and reliable behavior. Building on this experience, I am
+interested in:
 
-My goal is to build robots that generalize to new tasks and environments while
-remaining reliable, controllable, and safe.
+- **Representations and learning methods** for robot foundation models that generalize across tasks and environments and adapt through interaction.
+- **Policy learning and long-horizon decision-making**, including the use of predictive world models.
 
 <span class='anchor' id='news'></span>
 

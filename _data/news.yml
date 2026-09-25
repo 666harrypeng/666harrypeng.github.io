@@ -1,9 +1,9 @@
-# Entries are listed newest first; dates refer to the release/version announced.
+# Entries are listed newest first; dates refer to the event announced.
 # `date` is shown verbatim; `text` supports Markdown.
+- date: "2026.09"
+  text: "[**SENTINEL**](https://arxiv.org/abs/2510.12985) accepted to **NeurIPS 2026 E&D** as a poster."
 - date: "2026.08"
   text: "Released [**ManiGuard**](https://arxiv.org/abs/2608.17386)."
-- date: "2026.07"
-  text: "Released [**SENTINEL**](https://arxiv.org/abs/2510.12985)."
 - date: "2025.09"
   text: "Started my M.S. in Computer Engineering at **Northwestern University**."
 - date: "2025.05"

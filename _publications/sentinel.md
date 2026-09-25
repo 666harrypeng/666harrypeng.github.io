@@ -7,7 +7,7 @@ teaser_width: 2172
 teaser_height: 724
 # Author order and equal contribution follow the v3 PDF, not the stale project site or abstract-page metadata.
 authors: 'Simon Sinong Zhan<sup>&#42;</sup>, Philip Wang<sup>&#42;</sup>, Justin Liu<sup>&#42;</sup>, **Yiyan Peng**<sup>&#42;</sup>, Yiqi Lyu, Zinan Wang, Qineng Wang, Zhian Ruan, Xiangyu Shi, Xinyu Cao, Frank Yang, Zhenyang Ni, Kangrui Wang, Ruohan Zhang, Huajie Shao, Manling Li, Qi Zhu'
-venue: "arXiv preprint, 2025"
+venue: "NeurIPS 2026, Evaluations and Datasets Track (Poster)"
 paper: https://arxiv.org/abs/2510.12985
 code: https://github.com/NU-IDEAS-Lab/SENTINEL
 external_url: https://arxiv.org/abs/2510.12985

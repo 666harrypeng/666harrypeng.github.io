@@ -107,6 +107,23 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+/* ===== Current opportunities ===== */
+.opportunity-callout {
+  margin: 1.2em 0 1.4em;
+  padding: 0.85em 1em;
+  border: 1px solid #d7e4f1;
+  border-left: 3px solid #4c75a1;
+  border-radius: 6px;
+  background: #f4f8fc;
+  color: #334155;
+
+  p { margin: 0; line-height: 1.5; }
+  p + p { margin-top: 0.35em; }
+  strong { color: #244b72; }
+  a { font-weight: 600; }
+  a:focus-visible { outline: 2px solid #4c75a1; outline-offset: 3px; }
+}
+
 /* ===== Inline table of contents (project detail pages) =====
    AcadHomepage zeroes $right-sidebar-width, so the original floating
    aside would render invisible. Rendered inline instead. */
@@ -379,6 +396,15 @@ h1:before, .anchor:before {
 .author__pronouns { margin: 0.1em 0 0.3em; font-size: 0.85em; color: #6b7178; }
 
 // Contact links stay reachable when the desktop sidebar list is hidden.
+.profile_box .author__x-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  vertical-align: -0.125em;
+  border-radius: 0;
+}
+
 .author__mobile-links {
   display: flex;
   flex-wrap: wrap;

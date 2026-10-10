@@ -26,7 +26,7 @@ and Dr. [Albert Kai-Sun Wong](https://seng.hkust.edu.hk/about/people/faculty/kai
 
 <aside class="opportunity-callout" aria-label="PhD and research opportunities">
   <p>I’m seeking <strong>PhD opportunities</strong> starting in <strong>Fall 2027</strong>, focusing on robot learning and embodied AI.</p>
-  <p>I’m also open to research opportunities in industry. <a href="mailto:{{ site.author.email | escape }}">Get in touch</a>.</p>
+  <p>I’m also open to research collaborations and research opportunities in industry. <a href="mailto:{{ site.author.email | escape }}">Feel free to reach out</a>!</p>
 </aside>
 
 <span class='anchor' id='research-interests'></span>

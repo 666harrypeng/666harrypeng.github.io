@@ -7,7 +7,7 @@ teaser_video: /assets/videos/gam-overview.mp4
 teaser_width: 960
 teaser_height: 540
 authors: 'Gehao Zhang, Weikai Huang, Shailesh Shailesh, **Yiyan Peng**, Jiafei Duan, Ranjay Krishna'
-venue: "arXiv preprint, 2026"
+venue: "CoRL 2026 Workshop — Pretrain to Adapt"
 website: https://grounded-action-model.github.io/
 paper: https://arxiv.org/abs/2609.23863
 code: https://github.com/GehaoZhang6/Grounded-Action-Model

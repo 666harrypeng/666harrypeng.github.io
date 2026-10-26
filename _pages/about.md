@@ -34,7 +34,7 @@ and Dr. [Albert Kai-Sun Wong](https://seng.hkust.edu.hk/about/people/faculty/kai
 # 🔬 Research Interests
 
 My research interests lie in **robot learning and embodied AI**, particularly
-reliable and adaptive robotic manipulation.
+reliable and adaptive manipulation for precision-demanding and long-horizon tasks.
 
 My prior work on specification-grounded safety evaluation highlighted the gap
 between task success and reliable behavior. Building on this experience, I am

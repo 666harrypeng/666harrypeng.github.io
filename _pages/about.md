@@ -24,9 +24,8 @@ Previously, I received my B.Eng. in Electronic Engineering from the
 where I was advised by Prof. [Jun Zhang](https://ece.hkust.edu.hk/eejzhang)
 and Dr. [Albert Kai-Sun Wong](https://seng.hkust.edu.hk/about/people/faculty/kai-sun-albert-wong).
 
-<aside class="opportunity-callout" aria-label="PhD and research opportunities">
-  <p>I’m seeking <strong>PhD opportunities</strong> starting in <strong>Fall 2027</strong>, focusing on robot learning and embodied AI.</p>
-  <p>I’m also open to research collaborations and research opportunities in industry. <a href="mailto:{{ site.author.email | escape }}">Feel free to reach out</a>!</p>
+<aside class="opportunity-callout" aria-label="PhD, employment, internships, and research collaboration opportunities">
+  <p>Open to <strong>PhD opportunities (Fall 2027)</strong>, <strong>full-time roles</strong>, <strong>internships</strong> in industry or academia, and <strong>research collaborations</strong>. <a href="mailto:{{ site.author.email | escape }}">Get in touch</a>.</p>
 </aside>
 
 <span class='anchor' id='research-interests'></span>
@@ -34,14 +33,17 @@ and Dr. [Albert Kai-Sun Wong](https://seng.hkust.edu.hk/about/people/faculty/kai
 # 🔬 Research Interests
 
 My research interests lie in **robot learning and embodied AI**, particularly
-reliable and adaptive manipulation for precision-demanding and long-horizon tasks.
+reliable and adaptive manipulation. I am interested in tasks that require
+**precision** or sustained progress over **long horizons**, and in how policies
+maintain these capabilities in **dynamic manipulation** tasks and under inference
+**latency**.
 
 My prior work on specification-grounded safety evaluation highlighted the gap
 between task success and reliable behavior. Building on this experience, I am
 interested in:
 
-- **Representations and learning methods** for robot foundation models that generalize across tasks and environments and adapt through interaction.
-- **Policy learning and long-horizon decision-making**, including the use of predictive world models.
+- **Representations and learning methods** for robot foundation models that generalize across tasks and adapt through interaction, with predictive world models as one possible approach.
+- **Policy learning and adaptive decision-making** for precise and long-horizon manipulation, including how policies use observations, memory, and feedback.
 
 <span class='anchor' id='news'></span>
 

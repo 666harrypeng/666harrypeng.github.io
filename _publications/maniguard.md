@@ -15,5 +15,5 @@ redirect_to: https://nu-ideas-lab.github.io/ManiGuard/
 sitemap: false
 description: |
   - A **specification-grounded manipulation benchmark** with 1,000 evaluation scenarios and 8,000 safety-annotated demonstrations for evaluating and fine-tuning VLA policies.
-  - Across 23,000+ rollouts, **6–21% of successful executions still violate safety specifications**, with evaluation spanning simulation and a real Franka robot.
+  - Across 23,000+ rollouts, **6–21% of successful simulated executions still violate safety specifications**, with evaluation spanning simulation and a real Franka robot.
 ---

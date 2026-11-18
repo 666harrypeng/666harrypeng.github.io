@@ -7,7 +7,7 @@ teaser_video: /assets/videos/gam-overview.mp4
 teaser_width: 960
 teaser_height: 540
 authors: 'Gehao Zhang, Weikai Huang, Shailesh Shailesh, **Yiyan Peng**, Jiafei Duan, Ranjay Krishna'
-venue: "CoRL 2026 Workshop — Pretrain to Adapt"
+venue: "CoRL 2026 Workshops: Pretrain to Adapt, G2A, and Compositional Generalization for Real-World Robot Learning"
 website: https://grounded-action-model.github.io/
 paper: https://arxiv.org/abs/2609.23863
 code: https://github.com/GehaoZhang6/Grounded-Action-Model
